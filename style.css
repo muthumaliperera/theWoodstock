@@ -2,11 +2,11 @@
 
 .hero-section{
     min-height: 70vh;
-    background: url('./assets/office-730681_1920.jpg') rgba(0, 0, 0, 0.655);
+    background: url('./assets/living-room-4013531_1920.jpg') rgba(0, 0, 0, 0.262);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     
 }
 @media(max-width:991px){
