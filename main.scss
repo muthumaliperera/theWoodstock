@@ -1,0 +1,26 @@
+$primary:rgb(219, 144, 3);
+$dark:rgb(32, 32, 32);
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+$custom-theme-colors:(
+    "maincolor":rgb(219, 144, 3),
+    "maincolor2":rgb(255, 185, 54),
+    "maincolor3":rgb(253, 199, 100),
+    "maincolor4":rgb(251, 207, 126),
+    "maincolor5":rgb(251, 219, 159),
+    
+    "altdark":rgb(32, 32, 32)
+);
+
+$theme-colors:map-merge($custom-theme-colors , $theme-colors );
+
+
+
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss'
+
+// "maincolor2":#FFF7C2,
+//     "maincolor3":#FFB27B,
+//     "maincolor4":#D77B5F,
+//     "maincolor5":#FF9200,

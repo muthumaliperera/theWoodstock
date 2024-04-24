@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>bootstrap Navbar</title>
+</head>
+<body class="min-vh-100 overflow-x-hidden">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-altdark">
+        <div class="container-md">
+          <!--logo-->
+          <a class="navbar-brand fs-4" href="#">
+            <img src="./assets/light.png" alt="" class="img-fluid" style="width: 150px;">
+            
+          </a>
+          <!--toggle btn-->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--sidebar-->
+          <div class="sidebar offcanvas offcanvas-end px-3 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--sidebar header-->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <!--close btn-->
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!--sidebar body-->
+            <div class="offcanvas-body d-flex flex-column p-4 p-md-0 flex-md-row">
+              <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="#contact">Contact</a>
+                </li>
+                
+                
+              </ul>
+            <!--login/signup-->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+              <a href="#login" class="text-white">Login</a>
+              <a href="#signup" class="text-dark text-decoration-none px-3 py-1 rounded-4 bg-maincolor">Sign Up</a>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--back-to-top-btn-->
+      <button type="button" class="btn btn-maincolor " id="back-to-top" style="position: fixed; right:10px; bottom: 200px; z-index:1;"><i class="bi bi-arrow-up"></i></button>
+
+
+
+
+
+      <!--Home-->
+      <section class="hero-section d-flex justify-content-center align-items-center">
+        <div class="container-md  justify-content-center align-items-center">
+          <div class="justify-content-center text-center mt-lg-5">
+            <img src="./assets/light.png" alt="" style="width: 200px;" >
+          </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 col-10-sm text-light text-center">
+                  <h2 class="display-2 text-center ">Modern Furniture</h2>
+                <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere voluptas molestiae!</p>  
+
+                <button class="btn bg-maincolor">Explore Show Room</button>
+                <button type="button" class="btn btn-outline-light">Call Customer Care</button>
+                </div>
+                
+                <div class="col-4">
+                    <img src="./assets/pngwing.com (1).png" alt="" class="img-fluid d-none d-md-block">
+                </div>
+                
+            </div>
+        </div>
+      </section>
+
+      
+      <!--shop-->
+      <section id="shop" class="py-5 bg-light">
+        <div class="container-md">
+          <div class="text-center">
+            <h2 class="display-6"><i class="fa-solid fa-store"></i> New to Shop</h2> 
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+          </div>
+          <div class="row gap-2 justify-content-center">
+            <!--card 1-->
+              <div class="card m-1 " style="width: 20rem;">
+                <div class="position-relative">
+                    <img src="./assets/Dfw Lounge Rentals - Party Equipment Rentals.jfif" class="pt-2" alt="..." style="width: 100%; height:200px;">
+                <div class="position-absolute bottom-0 end-0 text-center">
+                  <p class="btn btn-primary rounded-circle border-3 border-light p-2 fs-3 me-2" style="width: 50px; height:50px">
+                    <i class="bi bi-cart-plus-fill text-light"></i>
+                  </p>
+                  
+                </div>
+                </div>
+
+              <div class="card-body" >
+                <h5 class="card-title">Eclipse Sectional Sofa</h5>
+                <p class="card-text d-none d-lg-block">A sleek, modular sofa with adjustable headrests and built-in USB charging ports. Upholstered in premium leather, its low-profile design...
+                  <a href="#" class="text-decoration-none text-secondary">Explore More about this Product</a>
+                </p>
+                <div>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    23 reviews
+                  </div>
+                  <h3>LKR.399,000</h3>
+                
+                <p class="fw-bold lh-1 fs-6" style="color: red;">Offers upto 30% for Woodstock loyalty cards.</p>
+                  
+                </div>
+                <div class="d-flex gap-2 ">
+                  <a href="#" class="btn bg-maincolor">Visit Store</a>
+                  <a href="#" class="btn btn-outline-maincolor">Contact Us</a>
+                </div>
+               
+              </div>
+              </div>
+            <!--card 2-->
+              <div class="card m-1" style="width: 20rem;">
+                <div class="position-relative">
+                  <img src="./assets/Luna Coffee Table Set.jfif" class="pt-2" alt="..." style="width: 100%; height:200px;">
+                  <div class="position-absolute bottom-0 end-0 text-center">
+                    <p class="btn btn-primary rounded-circle border-3 border-light p-2 fs-3 me-2" style="width: 50px; height:50px">
+                      <i class="bi bi-cart-plus-fill text-light"></i>
+                    </p>
+                    
+                  </div>
+                </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Luna Coffee Table</h5>
+                <p class="card-text d-none d-lg-block">A minimalist round table featuring a tempered glass top supported by a black metal frame. Its open design adds a spacious feel  ....
+                  <a href="#" class="text-decoration-none text-secondary">Explore More about this Product</a>
+                </p>
+                <div>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    34 reviews
+                  </div>
+                  <h3>LKR.195,000</h3>
+                
+                <p class="fw-bold lh-1 fs-6" style="color: red;">Offers upto 20% for Woodstock loyalty cards.</p>
+                  
+                </div>
+                <div class="d-flex gap-2 ">
+                  <a href="#" class="btn bg-maincolor">Visit Store</a>
+                  <a href="#" class="btn btn-outline-maincolor">Contact Us</a>
+                </div>
+               
+              </div>
+              </div>
+            <!--card 3-->
+              <div class="card m-1" style="width: 20rem;">
+                <div class="position-relative">
+                  <img src="./assets/Vitra DSW Eames Plastic Chair - Black Maple _ Emerald RE.jfif" class="pt-2" alt="..." style="width: 100%; height:200px;">
+                  <div class="position-absolute bottom-0 end-0 text-center">
+                    <p class="btn btn-primary rounded-circle border-3 border-light p-2 fs-3 me-2" style="width: 50px; height:50px">
+                      <i class="bi bi-cart-plus-fill text-light"></i>
+                    </p>
+                    
+                  </div>
+                </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Zenith Dining Chair</h5>
+                <p class="card-text d-none d-lg-block">Sculptural dining chairs with curved wooden frames and upholstered seats. Designed for comfort and elegance, they blend....
+                  <a href="#" class="text-decoration-none text-secondary">Explore More about this Product</a>
+                </p>
+                <div>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    21 reviews
+                  </div>
+                  <h3>LKR.235,000</h3>
+                
+                <p class="fw-bold lh-1 fs-6" style="color: red;">Offers upto 25% for Woodstock loyalty cards.</p>
+                  
+                </div>
+                <div class="d-flex gap-2 ">
+                  <a href="#" class="btn bg-maincolor">Visit Store</a>
+                  <a href="#" class="btn btn-outline-maincolor">Contact Us</a>
+                </div>
+               
+              </div>
+              </div>
+            <!--card 4-->
+              <div class="card m-1" style="width: 20rem;">
+                <div class="position-relative">
+                  <img src="./assets/Adairs Lunar Oak Bookshelf - Natural.jfif" class="pt-2" alt="..." style="width: 100%; height:200px;">
+                  <div class="position-absolute bottom-0 end-0 text-center">
+                    <p class="btn btn-primary rounded-circle border-3 border-light p-2 fs-3 me-2" style="width: 50px; height:50px">
+                      <i class="bi bi-cart-plus-fill text-light"></i>
+                    </p>
+                    
+                  </div>
+                </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Nova Bookshelf</h5>
+                <p class="card-text d-none d-lg-block">A geometrically inspired bookshelf crafted from solid oak and metal accents. With asymmetrical shelves,....
+                  <a href="#" class="text-decoration-none text-secondary">Explore More about this Product</a>
+                </p>
+                <div>
+                  <div class="">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    44 reviews
+                  </div>
+                  <h3>LKR.129,000</h3>
+                
+                <p class="fw-bold lh-1 fs-6" style="color: red;">Offers upto 20% for Woodstock loyalty cards.</p>
+                  
+                </div>
+                <div class="d-flex gap-2 ">
+                  <a href="#" class="btn bg-maincolor">Visit Store</a>
+                  <a href="#" class="btn btn-outline-maincolor">Contact Us</a>
+                </div>
+               
+              </div>
+              </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!--about-->
+      <section id="about" class="bg-altdark pt-4 pb-5 mb-3 border-bottom border-top border-5 border-maincolor">
+        <div class="container-md my-4 text-light">
+          <div class="text-center">
+            <h2 class="display-6"><i class="fa-solid fa-people-roof"></i>  About The Woodstock</h2>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+          </div>
+          <div class="row justify-content-center align-items-center mt-5 py-4">
+            <div class="col-10 col-lg-6 text-align-justify">
+              <p class="lead">Welcome to Modern Designs Furniture, where contemporary elegance meets functional style. We curate a diverse collection of modern furniture pieces that elevate your living spaces. Our passion for quality craftsmanship and innovative design drives us to offer unique and inspiring furniture solutions.</p>
+              <p>At Modern Designs Furniture, we believe in blending aesthetics with practicality. Whether you're furnishing a cozy apartment or designing a sophisticated office space, our carefully selected range of sofas, chairs, tables, beds, and storage units ensures there's something for every taste and requirement.</p>
+              <p>Our commitment to excellence extends beyond our product selection. We prioritize customer satisfaction by providing personalized service and expert advice. From choosing the right pieces to arranging delivery, our team is dedicated to making your furniture shopping experience enjoyable and stress-free.</p>
+              <p>Explore our online showroom or visit our store to discover the latest trends in modern furniture. Let us help you transform your living spaces into havens of contemporary comfort and style. Experience the essence of Modern Designs Furniture – where design meets lifestyle.</p>
+            </div>
+            <div class=" col-xl-3 col-4 d-none d-lg-block">
+              <img src="./assets/f900ab85-9576-4f69-b8e8-8a565468662e.jfif" class="img-fluid " alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--services-->
+      <section id="services" class="pt-4 pb-5 mb-3">
+        <div class="container-md">
+          <div class="text-center">
+            <h2 class="display-6"><i class="fa-solid fa-handshake-angle"></i> Our Services</h2>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, commodi?</p>
+          </div>
+          <div class="row justify-content-center gap-2">
+            <!--1-->
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-between">
+                  <i class="bi bi-clipboard2-check"></i>
+                   Interior Design Consultation
+               
+                   <!--collapse services btn-->
+                  <a class="btn btn-maincolor" data-bs-toggle="collapse" href="#interiorservices" role="button" aria-expanded="false" aria-controls="interiorservices">
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
+                  </h5>
+                  <!--collapse services-->
+                  <div class="collapse" id="interiorservices">
+                    <div class="card card-body">
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Personalized Design Approach</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Comprehensive Space Planning</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Color Palette Selection</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Furniture and Decor Recommendations</h6>
+                    </div>
+                  </div>
+                
+                <p class="card-text">Collaborate with our experienced interior designers to create personalized spaces tailored to your style and needs. From layout planning to color schemes and furniture selection, we'll help bring your vision to life.</p>
+                <div class="text-left d-flex flex-column">
+                <a href="" class="card-link text-muted ">Explore Our Design Process</a>
+                <a href="" class="text-start card-link text-muted">Meet Our Design Team</a>
+               </div>
+              </div>
+            </div>
+            <!--2-->
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-between">
+                  <i class="bi bi-clipboard2-check"></i>
+                  Custom Furniture Design
+               
+                   <!--collapse services btn-->
+                  <a class="btn btn-maincolor" data-bs-toggle="collapse" href="#CustomFurniture" role="button" aria-expanded="false" aria-controls="CustomFurniture">
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
+                  </h5>
+                  <!--collapse services-->
+                  <div class="collapse" id="CustomFurniture">
+                    <div class="card card-body">
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Design Consultation and Concept Development</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Material and Finish Selection</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Sketches and 3D Renderings</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Collaborative Design Process</h6>
+                    </div>
+                  </div>
+                
+                <p class="card-text">Turn your ideas into reality with our custom furniture design service. Whether it's a unique sofa, bespoke dining table, or custom-built shelving unit, we'll work closely with you to craft one-of-a-kind pieces.</p>
+                <div class="text-left d-flex flex-column">
+                <a href="" class="card-link text-muted ">Customize Your Furniture</a>
+                <a href="" class="text-start card-link text-muted">Inspiration Gallery</a>
+               </div>
+              </div>
+            </div>
+            <!--3-->
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-between">
+                  <i class="bi bi-clipboard2-check"></i> 
+                      Furniture Delivery & Assembly
+               
+                   <!--collapse services btn-->
+                  <a class="btn btn-maincolor" data-bs-toggle="collapse" href="#FurnitureDelivery" role="button" aria-expanded="false" aria-controls="FurnitureDelivery">
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
+                  </h5>
+                  <!--collapse services-->
+                  <div class="collapse" id="FurnitureDelivery">
+                    <div class="card card-body">
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Delivery Information and Areas</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Professional Assembly Services</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Care and Maintenance Guidelines</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Delivery Scheduling and Tracking</h6>
+                    </div>
+                  </div>
+                
+                <p class="card-text">Enjoy hassle-free furniture shopping with our delivery and assembly service. Our professional team will deliver your furniture to your doorstep and assemble it with precision, ensuring a seamless experience.</p>
+                <div class="text-left d-flex flex-column">
+                <a href="" class="card-link text-muted ">Delivery Information</a>
+                <a href="" class="text-start card-link text-muted">Assembly Tips & Videos</a>
+               </div>
+              </div>
+            </div>
+            <!--4-->
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-between">
+                  <i class="bi bi-clipboard2-check"></i>
+                  Furniture Rental for Staging
+               
+                   <!--collapse services btn-->
+                  <a class="btn btn-maincolor" data-bs-toggle="collapse" href="#interiorservices" role="button" aria-expanded="false" aria-controls="interiorservices">
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
+                  </h5>
+                  <!--collapse services-->
+                  <div class="collapse" id="interiorservices">
+                    <div class="card card-body">
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Tailored Staging Solutions</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Furniture Selection and Coordination</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Flexible Rental Packages</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Impact of Staging on Property Sales</h6>
+                    </div>
+                  </div>
+                
+                <p class="card-text">Real estate professionals and home stagers can benefit from our furniture rental service. Choose from our curated selection of stylish furniture pieces to showcase properties and create inviting spaces for potential buyers.</p>
+                <div class="text-left d-flex flex-column">
+                <a href="" class="card-link text-muted ">Staging Services</a>
+                <a href="" class="text-start card-link text-muted">Staging Portfolio</a>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--contact-->
+      <section id="contact" class="bg-altdark pt-4 pb-3 mb-0">
+        <div class="container-md text-light">
+          <div class="text-center">
+            <h2 class="display-6"><i class="fa-solid fa-address-book"></i> Contact Us</h2>
+            <p2 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum.</p2>
+          </div>
+          <div class="row justify-content-center my-4 mx-2 p-2">
+            <div class="col-md-8">
+              <form>
+                <!--email-->
+                <label for="email" class="form-label">Email</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                  <input type="email" class="form-control" id="email" placeholder="e.g.angela@gmail.com">
+                </div>
+                <!--name-->
+                <label for="name" class="form-label">Name</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                  <input type="name" class="form-control" id="name" placeholder="e.g.angela">
+                </div>
+                <!--subject-->
+                <label for="subject" class="form-label">Your Message</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected> Pricing Query</option>
+                    <option value="content" selected> Content Query</option>
+                    <option value="other" selected> Other Query</option>
+                  </select>
+                 </div> 
+                  <div class="form-floating mb-4">
+                    <textarea name="" id="query" class="form-control" style="height: 140px;"></textarea> 
+                    <label for="query" class="form-label">Your Query...</label>
+                   </div>
+                <!--submit button-->   
+                   <div class="text-center">
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                   </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="p-0 m-0">
+      <!--footer-->
+      <section class=" bg-dark text-light p-3 mt-0">
+        <div class="container-fluid ">
+          <div class="logo text-center">
+            <img src="./assets/light.png" alt="" class="img-fluid" style="width: 200px;">
+            </h2>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="justify-content-center d-flex gap-3 fs-5 m-1">
+              <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+          </div>
+          <div class="row justify-content-center text-light">
+              <div class="col-3  d-flex gap-2 p-2 text-light">
+                  <p class="h4 "><i class="bi bi-geo-alt-fill"></i></p>
+                  <p class=""> 7 Street, 3rd Lane, Colombo</p>  
+              </div>
+              <div class="col-3 d-flex gap-2 p-2">
+                  <p class="h4"><i class="bi bi-telephone-plus-fill"></i></p>
+                  <p class="">+94 76 123 4567</p>  
+              </div>
+              <div class="col-3  d-flex gap-2 p-2">
+                  <p class="h4 "><i class="bi bi-envelope-fill"></i></p>
+                  <p class=""> thewoodstock@gmail.com</p>  
+              </div>
+          </div>
+          <hr>
+          <div class="row bg-dark">
+            <div class="text-light text-center">
+              <a href="" class="btn text-light">Website Terms</a> | <a href="" class="btn text-light">Privacy Policy</a> | <a href="" class="btn text-light">Contact</a>
+            </div>
+            <p class="text-white text-center"><i class="bi bi-c-circle"></i>Copyright. All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  $('#back-to-top').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+});
+
+      </script>
+</body>
+</html>
